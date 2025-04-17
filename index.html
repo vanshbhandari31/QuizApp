@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="quiz-container">
+        <header>
+            <h1 class="quiz-title">Interactive Quiz</h1>
+            <p class="quiz-subtitle">Test your knowledge</p>
+        </header>
+
+        <!-- Question Progress Grid -->
+        <div class="progress-grid" id="progressGrid">
+            <!-- Question indicators will be dynamically generated here -->
+        </div>
+
+        <!-- Question Container -->
+        <div id="questionContainer" class="active">
+            <div class="question-number" id="questionNumber">Question 1/2</div>
+            <div class="question-text" id="questionText">What is the capital of France?</div>
+
+            <div class="answer-container" id="answerContainer">
+                <!-- Answer options will be dynamically generated here -->
+            </div>
+
+            <div class="controls">
+                <button id="nextBtn" class="next-btn" disabled>Next Question</button>
+            </div>
+        </div>
+
+        <!-- Results Container (Initially Hidden) -->
+        <div id="resultsContainer" class="hidden">
+            <h2>Quiz Results</h2>
+            <div class="score-display">
+                <span id="scoreValue">0</span>/<span id="totalQuestions">0</span>
+            </div>
+            <div class="results-breakdown" id="resultsBreakdown">
+                <!-- Results will be dynamically generated here -->
+            </div>
+            <button id="restartBtn" class="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
